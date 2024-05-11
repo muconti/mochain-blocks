@@ -1,12 +1,12 @@
 {
-  "name": "oneledger-blocks",
+  "name": "mochain-blocks",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "create-oneledger": "graph create --node http://143.110.222.158:8020 blocklytics/oneledger-blocks",
-    "remove-oneledger": "graph remove --node http://143.110.222.158:8020 blocklytics/oneledger-blocks",
-    "deploy-oneledger": "graph deploy --debug --node http://143.110.222.158:8020 --ipfs http://143.110.222.158:5001 blocklytics/oneledger-blocks"
+    "create-mochain": "graph create --node https://thegraph.mochain.app/deploy/ mochainapp/mochain-blocks",
+    "remove-mochain": "graph remove --node https://thegraph.mochain.app/deploy/ mochainapp/mochain-blocks",
+    "deploy-mochain": "graph deploy --node https://thegraph.mochain.app/deploy/ mochainapp/mochain-blocks"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.17.1",

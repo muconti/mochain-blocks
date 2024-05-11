@@ -1,19 +1,19 @@
-specVersion: 0.0.2
-description: Indexing all OneLedger Block data
-repository: https://github.com/blocklytics/oneledger-blocks
+specVersion: 0.0.4
+description: Indexing all Mochain Block data
+repository: https://github.com/muconti/mochain-blocks
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: ConverterRegistryContract
-    network: oneledger
+    network: mo
     source:
-      address: "0x8D79F8cE4bc06fE72Ba87Af3E129d98ad0C736f8"
+      address: "0x16d4c81Bf7512ECBCa7BDA92172699dEF8F41d11"
       abi: ConverterRegistryContract
-      startBlock: 1
+      startBlock: 575970
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.3
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - ConverterAddition
