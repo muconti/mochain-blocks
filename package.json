@@ -4,9 +4,9 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "create-mochain": "graph create --node https://thegraph.mochain.app/deploy/ mochainapp/mochain-blocks",
-    "remove-mochain": "graph remove --node https://thegraph.mochain.app/deploy/ mochainapp/mochain-blocks",
-    "deploy-mochain": "graph deploy --node https://thegraph.mochain.app/deploy/ --ipfs http://127.0.0.1:5001/ mochainapp/mochain-blocks"
+    "create-mochain": "graph create --node http://localhost:8020 mochainapp/mochain-blocks",
+    "remove-mochain": "graph remove --node http://localhost:8020 mochainapp/mochain-blocks",
+    "deploy-mochain": "graph deploy --node http://localhost:8020 --ipfs http://127.0.0.1:5001/ mochainapp/mochain-blocks"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.45.2",
